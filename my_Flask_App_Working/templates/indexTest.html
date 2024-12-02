@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input</title>
+    <link rel="stylesheet" href="/static/css/styleTest.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Submit Your Travel Information</h1>
+        <form id="destinationForm">
+		<!--<label for="email_id">Enter your email Id</label>
+            <input type="text" id="email_id" name="email_id" required ><br><br>
+		-->
+		
+		<label for = "vehicleType">Vehicle Type</label>
+			<input type = "text" id = "vehicleType" name = "vehicleType" required> <br><br>
+			
+		<label for = "fuelType">Fuel Type</label>
+			<input type = "text" id = "fuelType" name = "fuelType" required> <br><br>
+			
+		
+        <!--<label for="startingDestination">Starting Destination:</label>
+            <input type="text" id="startingDestination" name="startingDestination" required ><br><br>
+
+        <label for="endingDestination">Ending Destination:</label>
+            <input type="text" id="endingDestination" name="endingDestination" required><br><br>
+		-->
+
+           <!--  <button type="submit">Submit</button>
+		   -->
+        </form>
+
+        <div id="responseMessage"></div>
+    
+	
+	 <!-- Geolocation Section 
+        <h2>Geolocation Tracker</h2>
+        <button onclick="getLocation()">Get Current Location</button>
+        <button onclick="getPosition()">Track Live Location</button>
+        <button onclick="stopTracking()">Stop Tracking</button>
+        <p id="locationStatus"></p>
+        <p id="currentLocation"></p>
+        <p id="liveLocation"></p>
+		-->
+		<h2>Path Tracking</h2>
+		<button onclick="startPathTracking()">Start Path Tracking</button>
+		<button onclick="stopPathTracking()">Stop Path Tracking</button>
+		<p id="locationStatus"></p>
+		<p id="currentLocation"></p>
+		<p id="liveLocation"></p>
+
+    </div>
+	
+<!--
+	<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
+}
+
+
+</script>
+-->
+
+
+    <script src="/static/js/scriptTest.js"></script>
+</body>
+</html>
+
+
